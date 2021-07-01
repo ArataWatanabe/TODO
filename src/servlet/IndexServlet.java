@@ -20,7 +20,7 @@ public class IndexServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Random rand = new Random();
 		int randomValue = rand.nextInt(4);
-		String randomString = new String[] {"Linux", "paiza", "TODOアプリ作成", "履歴書作成"}[randomValue];
+		String randomString = new String[] {"Linuxテスト対策", "paiza", "TODOアプリ作成", "履歴書作成"}[randomValue];
 		String today = new SimpleDateFormat("MM月dd日").format(new Date());
 
 		response.setContentType("text/html; charset=UTF-8");
